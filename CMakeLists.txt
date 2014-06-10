@@ -335,7 +335,7 @@ endif()
 find_package(WiiUse)
 option_requires(VRPN_USE_WIIUSE
 		"Build with WiiUse library support (makes servers GPL)"
-		${DEFAULT_OFF_IF_SUBPROJECT}
+		true
 		WIIUSE_FOUND)
 
 if(VRPN_USE_WIIUSE)
@@ -1025,7 +1025,7 @@ if(GPL_SERVER_FLAGS)
 
 	option(VRPN_GPL_SERVER
 		"Check this to accept the possibility of linking GPL libraries with the server."
-		OFF)
+		ON)
 endif()
 
 if(GPLINCOMPAT_SERVER_FLAGS)

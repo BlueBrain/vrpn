@@ -37,3 +37,7 @@ docs/
 *.ncb
 *.suo
 /pc_win32/
+.travis.yml
+CMake/
+CMakeLists.txt.user*
+GNUmakefile
